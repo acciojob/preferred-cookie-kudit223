@@ -1,5 +1,8 @@
 const fontsize=document.querySelector('#fontsize');
 const fontcolor=document.querySelector('#fontcolor');
+const btn=document.querySelector("input[type='submit']")
+
+btn.addEventListener('click',save)
 
 function save(){
     let fontsizeValue=fontsize.value;

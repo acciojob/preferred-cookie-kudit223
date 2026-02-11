@@ -9,8 +9,8 @@ function save(){
     let fontsizeValue=fontsize.value;
     let fontcolorValue=fontcolor.value;
 
-    document.cookie=`font-size=${fontsizeValue}`
-    document.cookie=`font-color=${fontcolorValue}`;
+    document.cookie=`fontsize=${fontsizeValue}`
+    document.cookie=`fontcolor=${fontcolorValue}`;
     
 }
 
@@ -19,8 +19,6 @@ function render(){
         let arr=document.cookie.split(';')
         body.style.fontSize=`${arr[0].split('=')[1]}px`;
         body.style.color=arr[1].split('=')[1];
-
-        console.log(body.style.fontSize,body.style.color)
     }
 }
 render()

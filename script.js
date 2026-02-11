@@ -8,8 +8,8 @@ function save(){
     let fontsizeValue=fontsize.value;
     let fontcolorValue=fontcolor.value;
 
-    document.cookie=`fontsize=${fontsizeValue}`
-    document.cookie=`fontcolor=${fontcolorValue}`;
+    document.cookie=`font-size=${fontsizeValue}`
+    document.cookie=`font-color=${fontcolorValue}`;
     
 }
 
